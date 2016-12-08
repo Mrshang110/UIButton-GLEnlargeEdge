@@ -48,6 +48,7 @@ static char leftNameKey;
         return self.bounds;
     }
 }
+
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
     CGRect rect = [self enlargedRect];
@@ -57,14 +58,4 @@ static char leftNameKey;
     }
     return CGRectContainsPoint(rect, point) ? YES : NO;
 }
-/*
- - (UIView*)hitTest:(CGPoint) point withEvent:(UIEvent*) event
- {
-     CGRect rect = [self enlargedRect];
-     if (CGRectEqualToRect(rect, self.bounds))
-     {
-     return [super hitTest:point withEvent:event];
-     }
-     return CGRectContainsPoint(rect, point) ? self : nil;
- }*/
 @end

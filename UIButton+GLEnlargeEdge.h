@@ -10,8 +10,14 @@
 #import <objc/runtime.h>
 
 @interface UIButton (GLEnlargeEdge)
+/**  
+ * size 在button的frame基础上向四周扩展size pt
+ */
 - (void)setEnlargeEdge:(CGFloat) size;
-- (void)setEnlargeEdgeWithTop:(CGFloat) top right:(CGFloat) right bottom:(CGFloat) bottom left:(CGFloat) left;
+/**
+ *  在button的frame基础上向四周扩展size pt
+ */
 
+- (void)setEnlargeEdgeWithTop:(CGFloat) top right:(CGFloat) right bottom:(CGFloat) bottom left:(CGFloat) left;
 
 @end
