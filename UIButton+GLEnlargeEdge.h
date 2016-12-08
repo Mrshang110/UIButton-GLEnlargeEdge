@@ -13,11 +13,11 @@
 /**  
  * size 在button的frame基础上向四周扩展size pt
  */
-- (void)setEnlargeEdge:(CGFloat) size;
+- (void)gl_setEnlargeEdge:(CGFloat) size;
 /**
  *  在button的frame基础上向四周扩展size pt
  */
 
-- (void)setEnlargeEdgeWithTop:(CGFloat) top right:(CGFloat) right bottom:(CGFloat) bottom left:(CGFloat) left;
+- (void)gl_setEnlargeEdgeWithTop:(CGFloat) top right:(CGFloat) right bottom:(CGFloat) bottom left:(CGFloat) left;
 
 @end
